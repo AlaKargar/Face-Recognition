@@ -67,8 +67,8 @@ def compare_faces(embedding1 , embedding2, threshold = 0.5):
 
 
 
-embedding1 = get_face_embedding(embedder, 'data/actor1/2.jpg')
-embedding2 = get_face_embedding(embedder, 'data/test/test8.jpg')
+embedding1 = get_face_embedding(embedder, '2.jpg')
+embedding2 = get_face_embedding(embedder, 'test8.jpg')
 
 distance = compare_faces(embedding1, embedding2)
 
@@ -79,5 +79,6 @@ test = cv2.cvtColor(test, cv2.COLOR_BGR2RGB)
 
 results = detector.detect_faces(test)
 print(results)
+
 
 
